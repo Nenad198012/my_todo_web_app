@@ -12,7 +12,7 @@ def add_todo():
 
 
 st.title('My Todo App', )
-st.subheader('This is my todo app.')
+st.subheader('This is my first app.')
 st.write('This app is to increase your productivity.')
 
 st.text_input(label='',
@@ -27,5 +27,3 @@ for index, todo in enumerate(todos):
         functions.write_todos(todos)
         del st.session_state[todo]
         st.rerun()
-
-
